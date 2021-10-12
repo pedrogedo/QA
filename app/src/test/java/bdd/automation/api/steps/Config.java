@@ -21,6 +21,10 @@ public class Config {
             setContentType(ContentType.JSON).
             build();
 
+/**
+ * E sse código foi comentado pois se o response não tiver um content type JSON, ele irá
+ * quebrar o teste. Deve ser usado no método específico que contenha o content type JSON.
+ */
 //        RestAssured.responseSpecification = new ResponseSpecBuilder().
 //            expectContentType(ContentType.JSON).
 //            build();
