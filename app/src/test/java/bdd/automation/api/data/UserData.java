@@ -1,4 +1,4 @@
-package bdd.automation.api.functionalities.domain;
+package bdd.automation.api.data;
 
 import lombok.Builder;
 import lombok.Data;
@@ -14,7 +14,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class UserDomain {
+public class UserData {
 
     @Builder.Default
     private int id = 10;

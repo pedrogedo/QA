@@ -10,6 +10,3 @@ Funcionalidade: Gerenciamento de um usuário na PetStore
   Cenario: Criar um usuário na loja
     Quando Crio um usuario
     Entao O usuario e criado com sucesso
-
-
-
