@@ -2,6 +2,9 @@ package bdd.automation.api.api;
 
 import bdd.automation.api.data.UserData;
 import static io.restassured.RestAssured.given;
+
+import bdd.automation.api.exceptions.ErrorMessage;
+import io.restassured.path.json.exception.JsonPathException;
 import org.apache.http.HttpStatus;
 import java.net.ConnectException;
 
@@ -31,12 +34,13 @@ public class UserAPI {
      * @return após a busca através do método GET, iremos retornar o valor do BODY cujo o atributo
      * é o username
      */
-    public String getUsername(UserData userData) throws Exception {
-        return given().
-            pathParam("name", userData.getUsername()).
-        when().
-            get(USER_ENDPOINT).
-        thenReturn().
-            path("username");
+    public String getUsername(UserData userData) throws ConnectException, JsonPathException {
+
+            return given().
+                pathParam("name", userData.getUsername()).
+            when().
+                get(USER_ENDPOINT).
+            thenReturn().
+                path("username");
     }
 }
