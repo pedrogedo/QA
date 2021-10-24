@@ -44,7 +44,6 @@ public class UserStepsDefinitions {
     public void oUsuarioECriadoComSucesso() {
 
         String actualUsername = null;
-        expectedUser = UserData.builder().username("JOAO").build();
         try {
             actualUsername = userAPI.getUsername(expectedUser);
 
