@@ -38,7 +38,6 @@ public class UserStepsDefinitions {
         assertEquals(true,statusTest);
         System.out.println("O usuario foi cadastrado com sucesso !");
     }
-// TESTANDO COMMIT BRANCH DE DEV
 
     @Entao("O usuario e criado com sucesso")
     public void oUsuarioECriadoComSucesso() {
